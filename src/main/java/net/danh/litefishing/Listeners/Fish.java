@@ -59,6 +59,9 @@ public class Fish implements Listener {
                         mob.get().spawn(new AbstractLocation(e.getHook().getLocation().getWorld().getName(), e.getHook().getLocation().getX(), e.getHook().getLocation().getY(), e.getHook().getLocation().getZ()), 1);
                         Chat.sendPlayerMessage(e.getPlayer(), Objects.requireNonNull(File.getMessage().getString("CAUGHT.MOB"), "CAUGHT.MOB is null").replace("<name>", mob.get().getDisplayName().toString()).replace("<chance>", String.valueOf(chance)));
                     }
+                    pFish.remove(e.getPlayer());
+                    cFish.clear();
+                    dFish.clear();
                 }
                 if (ftype[0].equalsIgnoreCase("MMOITEMS")) {
                     String[] mtype = ftype[1].split(";");
@@ -75,17 +78,20 @@ public class Fish implements Listener {
                             }
                         }
                     }
+                    pFish.remove(e.getPlayer());
+                    cFish.clear();
+                    dFish.clear();
                 }
             }
             if (!fish.contains(":")) {
                 Bukkit.getScheduler().scheduleSyncDelayedTask(LiteFishing.getLiteFishing(), () -> {
                     Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), PlaceholderAPI.setPlaceholders(e.getPlayer(), fish));
                     Chat.sendPlayerMessage(e.getPlayer(), Objects.requireNonNull(File.getMessage().getString("CAUGHT.COMMAND"), "CAUGHT.COMMAND is null").replace("<name>", dFish.get(fish)).replace("<chance>", String.valueOf(chance)));
+                    pFish.remove(e.getPlayer());
+                    cFish.clear();
+                    dFish.clear();
                 });
             }
         }
-        pFish.remove(e.getPlayer());
-        cFish.clear();
-        dFish.clear();
     }
 }
