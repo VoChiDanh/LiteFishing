@@ -1,0 +1,39 @@
+SETTINGS:
+  XP_1:
+    CHANCE: 80
+    TYPE: COMMAND
+    DISPLAY: "&a5 XP"
+    ID: "bcore xp add %player_name% 5"
+  XP_2:
+    CHANCE: 70
+    TYPE: COMMAND
+    DISPLAY: "&a10 XP"
+    ID: "bcore xp add %player_name% 10"
+  XP_3:
+    CHANCE: 60
+    TYPE: COMMAND
+    DISPLAY: "&a15 XP"
+    ID: "bcore xp add %player_name% 15"
+  XP_4:
+    CHANCE: 50
+    TYPE: COMMAND
+    DISPLAY: "&a20 XP"
+    ID: "bcore xp add %player_name% 20"
+  XP_5:
+    CHANCE: 40
+    TYPE: COMMAND
+    DISPLAY: "&a30 XP"
+    ID: "bcore xp add %player_name% 30"
+  QP_1:
+    CHANCE: 20
+    TYPE: COMMAND
+    DISPLAY: "&a20 XP"
+    ID: "bcore qp add %player_name% 10"
+  QUAIVATBIEN:
+    CHANCE: 10
+    TYPE: MYTHICMOB
+    ID: QUAIVATBIEN
+  SACHPHUPHEP1:
+    CHANCE: 1
+    TYPE: MMOITEMS
+    ID: MATERIAL;SACHPHUPHEP1

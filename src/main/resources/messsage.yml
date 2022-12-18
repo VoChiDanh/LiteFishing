@@ -1,0 +1,5 @@
+CAUGHT:
+  MOB: "&aYou have caught the <name> mob with chance <chance>%"
+  ITEM: "&aYou have caught the <name> item with chance <chance>%"
+  ITEM_FULL: "&cYou caught the <name> item with chance <chance>% but your inventory was full so it dropped out"
+  COMMAND: "&cYou caught the gift <name> with chance <chance>%"
