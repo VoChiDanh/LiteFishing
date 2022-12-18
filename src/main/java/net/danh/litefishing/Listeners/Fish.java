@@ -85,5 +85,7 @@ public class Fish implements Listener {
             }
         }
         pFish.remove(e.getPlayer());
+        cFish.clear();
+        dFish.clear();
     }
 }
