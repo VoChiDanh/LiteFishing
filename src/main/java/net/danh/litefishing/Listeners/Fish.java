@@ -24,9 +24,9 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class Fish implements Listener {
 
-    HashMap<Player, String> pFish = new HashMap<>();
-    HashMap<String, Integer> cFish = new HashMap<>();
-    HashMap<String, String> dFish = new HashMap<>();
+    public static HashMap<Player, String> pFish = new HashMap<>();
+    public static HashMap<String, Integer> cFish = new HashMap<>();
+    public static HashMap<String, String> dFish = new HashMap<>();
 
     @EventHandler
     public void onFishing(PlayerFishEvent e) {
@@ -60,8 +60,6 @@ public class Fish implements Listener {
                         Chat.sendPlayerMessage(e.getPlayer(), Objects.requireNonNull(File.getMessage().getString("CAUGHT.MOB"), "CAUGHT.MOB is null").replace("<name>", mob.get().getDisplayName().toString()).replace("<chance>", String.valueOf(chance)));
                     }
                     pFish.remove(e.getPlayer());
-                    cFish.clear();
-                    dFish.clear();
                 }
                 if (ftype[0].equalsIgnoreCase("MMOITEMS")) {
                     String[] mtype = ftype[1].split(";");
@@ -79,8 +77,6 @@ public class Fish implements Listener {
                         }
                     }
                     pFish.remove(e.getPlayer());
-                    cFish.clear();
-                    dFish.clear();
                 }
             }
             if (!fish.contains(":")) {
@@ -88,8 +84,6 @@ public class Fish implements Listener {
                     Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), PlaceholderAPI.setPlaceholders(e.getPlayer(), fish));
                     Chat.sendPlayerMessage(e.getPlayer(), Objects.requireNonNull(File.getMessage().getString("CAUGHT.COMMAND"), "CAUGHT.COMMAND is null").replace("<name>", dFish.get(fish)).replace("<chance>", String.valueOf(chance)));
                     pFish.remove(e.getPlayer());
-                    cFish.clear();
-                    dFish.clear();
                 });
             }
         }
