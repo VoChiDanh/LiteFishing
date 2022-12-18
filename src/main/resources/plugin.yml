@@ -3,6 +3,10 @@ version: '${project.version}'
 main: net.danh.litefishing.LiteFishing
 api-version: 1.16
 authors: [ VoChiDanh ]
+softdepend:
+  - MMOItems
+  - MythicMobs
+  - PlaceholderAPI
 commands:
   litefishing:
     aliases:

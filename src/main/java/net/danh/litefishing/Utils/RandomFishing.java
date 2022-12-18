@@ -24,6 +24,10 @@ public class RandomFishing<String> {
         map.put(total, result);
     }
 
+    public void clear() {
+        map.clear();
+    }
+
     public String next() {
         int value = random.nextInt(total);
         return map.higherEntry(value).getValue();
