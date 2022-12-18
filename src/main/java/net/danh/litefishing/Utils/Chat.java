@@ -1,10 +1,12 @@
 package net.danh.litefishing.Utils;
 
+import net.danh.litefishing.LiteFishing;
 import net.md_5.bungee.api.ChatMessageType;
 import net.md_5.bungee.api.chat.TranslatableComponent;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
+import org.bukkit.entity.Player;
 
 import java.util.Arrays;
 import java.util.List;
@@ -17,15 +19,21 @@ public class Chat {
 
     public static void sendCommandSenderMessage(CommandSender c, String... msg) {
         Objects.requireNonNull(msg, Arrays.toString(msg) + " is null");
-        for (String string : msg) {
-            c.sendMessage(Chat.colorize(string));
+        if (c instanceof Player) {
+            sendPlayerMessage((Player) c, msg);
+        }
+        if (c instanceof ConsoleCommandSender) {
+            sendConsoleMessage((ConsoleCommandSender) c, msg);
         }
     }
 
     public static void sendCommandSenderMessage(CommandSender c, List<String> msg) {
         Objects.requireNonNull(msg, msg.toString() + " is null");
-        for (String string : msg) {
-            c.sendMessage(Chat.colorize(string));
+        if (c instanceof Player) {
+            sendPlayerMessage((Player) c, msg);
+        }
+        if (c instanceof ConsoleCommandSender) {
+            sendConsoleMessage((ConsoleCommandSender) c, msg);
         }
     }
 
@@ -58,7 +66,7 @@ public class Chat {
     public static void sendConsoleMessage(ConsoleCommandSender c, String... msg) {
         Objects.requireNonNull(msg, Arrays.toString(msg) + " is null");
         for (String string : msg) {
-            c.sendMessage(Chat.colorize(string));
+            c.sendMessage(Chat.colorize("[" + LiteFishing.getLiteFishing().getName() + "] " + string));
         }
     }
 
@@ -69,7 +77,7 @@ public class Chat {
     public static void sendConsoleMessage(ConsoleCommandSender c, List<String> msg) {
         Objects.requireNonNull(msg, msg.toString() + " is null");
         for (String string : msg) {
-            c.sendMessage(Chat.colorize(string));
+            c.sendMessage(Chat.colorize("[" + LiteFishing.getLiteFishing().getName() + "] " + string));
         }
     }
 
