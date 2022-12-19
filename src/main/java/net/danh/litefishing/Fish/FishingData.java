@@ -63,7 +63,7 @@ public class FishingData {
         Entity entity = e.getCaught();
         if (entity != null) {
             Bukkit.getScheduler().scheduleSyncDelayedTask(LiteFishing.getLiteFishing(), () -> {
-                if (entity instanceof Item && !entity.isOnGround() && entity.isInWater()) {
+                if (entity instanceof Item && !entity.isOnGround()) {
                     entity.remove();
                 }
             });
@@ -72,7 +72,7 @@ public class FishingData {
 
     public static boolean antiBug(PlayerFishEvent e) {
         Entity entity = e.getCaught();
-        return entity instanceof Item && !entity.isOnGround() && entity.isInWater();
+        return entity instanceof Item && !entity.isOnGround();
     }
 
     public static void loadCustomFish(CommandSender c) {
