@@ -3,9 +3,9 @@ package net.danh.litefishing.Listeners;
 import io.lumine.mythic.api.adapters.AbstractLocation;
 import io.lumine.mythic.api.mobs.MythicMob;
 import io.lumine.mythic.bukkit.MythicBukkit;
+import net.danh.litefishing.Fish.FishingData;
 import net.danh.litefishing.Utils.Chat;
 import net.danh.litefishing.Utils.File;
-import net.danh.litefishing.Utils.RandomFishing;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerFishEvent;
@@ -14,7 +14,7 @@ import java.util.Objects;
 import java.util.Optional;
 import java.util.concurrent.ThreadLocalRandom;
 
-import static net.danh.litefishing.Utils.FishingData.*;
+import static net.danh.litefishing.Fish.FishingData.*;
 
 public class MythicMobsFish implements Listener {
 
@@ -38,7 +38,9 @@ public class MythicMobsFish implements Listener {
                         mob.get().spawn(new AbstractLocation(e.getHook().getLocation().getWorld().getName(), e.getHook().getLocation().getX(), e.getHook().getLocation().getY(), e.getHook().getLocation().getZ()), 1);
                         Chat.sendPlayerMessage(e.getPlayer(), Objects.requireNonNull(File.getMessage().getString("CAUGHT.MOB"), "CAUGHT.MOB is null").replace("<name>", mob.get().getDisplayName().toString()).replace("<chance>", String.valueOf(chance)));
                     }
-                    pFish.remove(e.getPlayer());
+                    if (File.getSetting().getBoolean("FISHING_MODE.MYTHICMOB.DISABLE_VANILLA_FISH")) {
+                        FishingData.deleteVanillaFish(e, true);
+                    }
                 }
             }
         }

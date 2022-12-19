@@ -13,6 +13,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 
 public class Chat {
 
@@ -109,6 +110,14 @@ public class Chat {
             matcher = pattern.matcher(message);
         }
         return ChatColor.translateAlternateColorCodes('&', message);
+    }
+
+    public static List<String> colorize(String... message) {
+        return Arrays.stream(message).map(Chat::colorize).collect(Collectors.toList());
+    }
+
+    public static List<String> colorize(List<String> message) {
+        return message.stream().map(Chat::colorize).collect(Collectors.toList());
     }
 }
 

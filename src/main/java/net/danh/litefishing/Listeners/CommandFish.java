@@ -1,10 +1,10 @@
 package net.danh.litefishing.Listeners;
 
 import me.clip.placeholderapi.PlaceholderAPI;
+import net.danh.litefishing.Fish.FishingData;
 import net.danh.litefishing.LiteFishing;
 import net.danh.litefishing.Utils.Chat;
 import net.danh.litefishing.Utils.File;
-import net.danh.litefishing.Utils.RandomFishing;
 import org.bukkit.Bukkit;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -13,7 +13,7 @@ import org.bukkit.event.player.PlayerFishEvent;
 import java.util.Objects;
 import java.util.concurrent.ThreadLocalRandom;
 
-import static net.danh.litefishing.Utils.FishingData.*;
+import static net.danh.litefishing.Fish.FishingData.*;
 
 public class CommandFish implements Listener {
     @EventHandler
@@ -29,7 +29,9 @@ public class CommandFish implements Listener {
                 Bukkit.getScheduler().scheduleSyncDelayedTask(LiteFishing.getLiteFishing(), () -> {
                     Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), PlaceholderAPI.setPlaceholders(e.getPlayer(), fish));
                     Chat.sendPlayerMessage(e.getPlayer(), Objects.requireNonNull(File.getMessage().getString("CAUGHT.COMMAND"), "CAUGHT.COMMAND is null").replace("<name>", dFish.get(fish)).replace("<chance>", String.valueOf(chance)));
-                    pFish.remove(e.getPlayer());
+                    if (File.getSetting().getBoolean("FISHING_MODE.COMMAND.DISABLE_VANILLA_FISH")) {
+                        FishingData.deleteVanillaFish(e, true);
+                    }
                 });
             }
         }

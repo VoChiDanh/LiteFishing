@@ -1,0 +1,701 @@
+CUSTOM_FISH:
+  FISH_1:
+    TYPE: COD
+    NAME: "&bI | Fish"
+    WEIGHT: 1000
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_2:
+    TYPE: SALMON
+    NAME: "&6II | Fish"
+    WEIGHT: 999
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_3:
+    TYPE: PUFFERFISH
+    NAME: "&aIII | Fish"
+    WEIGHT: 998
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_4:
+    TYPE: TROPICAL_FISH
+    NAME: "&aIV | Fish"
+    WEIGHT: 997
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_5:
+    TYPE: COD
+    NAME: "&bV | Fish"
+    WEIGHT: 996
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_6:
+    TYPE: SALMON
+    NAME: "&6VI | Fish"
+    WEIGHT: 995
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_7:
+    TYPE: PUFFERFISH
+    NAME: "&aVII | Fish"
+    WEIGHT: 994
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_8:
+    TYPE: TROPICAL_FISH
+    NAME: "&aVIII | Fish"
+    WEIGHT: 993
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_9:
+    TYPE: PUFFERFISH
+    NAME: "&aIX | Fish"
+    WEIGHT: 992
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_10:
+    TYPE: TROPICAL_FISH
+    NAME: "&aX | Fish"
+    WEIGHT: 991
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_11:
+    TYPE: COD
+    NAME: "&b11 | Fish"
+    WEIGHT: 990
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_12:
+    TYPE: SALMON
+    NAME: "&612 | Fish"
+    WEIGHT: 989
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_13:
+    TYPE: PUFFERFISH
+    NAME: "&a13 | Fish"
+    WEIGHT: 988
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_14:
+    TYPE: TROPICAL_FISH
+    NAME: "&a14 | Fish"
+    WEIGHT: 987
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_15:
+    TYPE: COD
+    NAME: "&b15 | Fish"
+    WEIGHT: 986
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_16:
+    TYPE: SALMON
+    NAME: "&616 | Fish"
+    WEIGHT: 985
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_17:
+    TYPE: PUFFERFISH
+    NAME: "&a17 | Fish"
+    WEIGHT: 984
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_18:
+    TYPE: TROPICAL_FISH
+    NAME: "&a18 | Fish"
+    WEIGHT: 983
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_19:
+    TYPE: PUFFERFISH
+    NAME: "&a19 | Fish"
+    WEIGHT: 982
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_20:
+    TYPE: TROPICAL_FISH
+    NAME: "&a20 | Fish"
+    WEIGHT: 981
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_21:
+    TYPE: COD
+    NAME: "&b21 | Fish"
+    WEIGHT: 980
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_22:
+    TYPE: SALMON
+    NAME: "&622 | Fish"
+    WEIGHT: 979
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_23:
+    TYPE: PUFFERFISH
+    NAME: "&a23 | Fish"
+    WEIGHT: 978
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_24:
+    TYPE: TROPICAL_FISH
+    NAME: "&a24 | Fish"
+    WEIGHT: 977
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_25:
+    TYPE: COD
+    NAME: "&b25 | Fish"
+    WEIGHT: 976
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_26:
+    TYPE: SALMON
+    NAME: "&626 | Fish"
+    WEIGHT: 975
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_27:
+    TYPE: PUFFERFISH
+    NAME: "&a27 | Fish"
+    WEIGHT: 974
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_28:
+    TYPE: TROPICAL_FISH
+    NAME: "&a28 | Fish"
+    WEIGHT: 973
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_29:
+    TYPE: PUFFERFISH
+    NAME: "&a29 | Fish"
+    WEIGHT: 972
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_30:
+    TYPE: TROPICAL_FISH
+    NAME: "&a30 | Fish"
+    WEIGHT: 971
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_31:
+    TYPE: COD
+    NAME: "&b31 | Fish"
+    WEIGHT: 970
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_32:
+    TYPE: SALMON
+    NAME: "&632 | Fish"
+    WEIGHT: 969
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_33:
+    TYPE: PUFFERFISH
+    NAME: "&a33 | Fish"
+    WEIGHT: 968
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_34:
+    TYPE: TROPICAL_FISH
+    NAME: "&a34 | Fish"
+    WEIGHT: 967
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_35:
+    TYPE: COD
+    NAME: "&b35 | Fish"
+    WEIGHT: 966
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_36:
+    TYPE: SALMON
+    NAME: "&636 | Fish"
+    WEIGHT: 965
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_37:
+    TYPE: PUFFERFISH
+    NAME: "&a37 | Fish"
+    WEIGHT: 964
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_38:
+    TYPE: TROPICAL_FISH
+    NAME: "&a38 | Fish"
+    WEIGHT: 963
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_39:
+    TYPE: PUFFERFISH
+    NAME: "&a39 | Fish"
+    WEIGHT: 962
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_40:
+    TYPE: TROPICAL_FISH
+    NAME: "&a40 | Fish"
+    WEIGHT: 961
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_41:
+    TYPE: COD
+    NAME: "&b41 | Fish"
+    WEIGHT: 960
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_42:
+    TYPE: SALMON
+    NAME: "&642 | Fish"
+    WEIGHT: 959
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_43:
+    TYPE: PUFFERFISH
+    NAME: "&a43 | Fish"
+    WEIGHT: 958
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_44:
+    TYPE: TROPICAL_FISH
+    NAME: "&a44 | Fish"
+    WEIGHT: 957
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_45:
+    TYPE: COD
+    NAME: "&b45 | Fish"
+    WEIGHT: 956
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_46:
+    TYPE: SALMON
+    NAME: "&646 | Fish"
+    WEIGHT: 955
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_47:
+    TYPE: PUFFERFISH
+    NAME: "&a47 | Fish"
+    WEIGHT: 954
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_48:
+    TYPE: TROPICAL_FISH
+    NAME: "&a48 | Fish"
+    WEIGHT: 953
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_49:
+    TYPE: PUFFERFISH
+    NAME: "&a49 | Fish"
+    WEIGHT: 952
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1
+  FISH_50:
+    TYPE: TROPICAL_FISH
+    NAME: "&a50 | Fish"
+    WEIGHT: 951
+    LORE:
+      - "&7&oRare: Normal"
+      - "&8&l&oItem has no value for sale"
+    UNBREAKABLE: true
+    FLAGS:
+      - HIDE_UNBREAKABLE
+      - HIDE_ENCHANTS
+    ENCHANTMENTS:
+      - LUCK:1
+      - LURE:1

@@ -1,11 +1,13 @@
 package net.danh.litefishing;
 
 import net.danh.litefishing.CMD.LFishing;
+import net.danh.litefishing.Fish.FishingData;
 import net.danh.litefishing.Listeners.CommandFish;
+import net.danh.litefishing.Listeners.CustomFish;
 import net.danh.litefishing.Listeners.MMOItemsFish;
 import net.danh.litefishing.Listeners.MythicMobsFish;
 import net.danh.litefishing.Utils.Chat;
-import net.danh.litefishing.Utils.FishingData;
+import net.danh.litefishing.Utils.File;
 import net.xconfig.bukkit.XConfigBukkit;
 import net.xconfig.bukkit.config.BukkitConfigurationModel;
 import org.bukkit.Bukkit;
@@ -41,14 +43,23 @@ public final class LiteFishing extends JavaPlugin {
         Chat.sendCommandSenderMessage(Bukkit.getConsoleSender(), "&aRegistered Commands");
         configurationManager.build("", "config.yml");
         configurationManager.build("", "messsage.yml");
+        configurationManager.build("", "settings.yml");
+        configurationManager.build("", "custom_fish.yml");
         Chat.sendCommandSenderMessage(Bukkit.getConsoleSender(), "&aLoaded Files");
-        FishingData.reloadFishingData(Bukkit.getConsoleSender());
-        Chat.sendCommandSenderMessage(Bukkit.getConsoleSender(), "&aLoaded Data");
+        FishingData.loadFishingData(Bukkit.getConsoleSender());
+        if (File.getSetting().getBoolean("FISHING_MODE.CUSTOM_FISH.ENABLE")) {
+            FishingData.loadCustomFish(Bukkit.getConsoleSender());
+            Bukkit.getPluginManager().registerEvents(new CustomFish(), liteFishing);
+            Chat.sendCommandSenderMessage(Bukkit.getConsoleSender(), "&aRegistered Custom Fish");
+
+        }
     }
 
     @Override
     public void onDisable() {
         configurationManager.save("", "config.yml");
         configurationManager.save("", "messsage.yml");
+        configurationManager.save("", "settings.yml");
+        configurationManager.save("", "custom_fish.yml");
     }
 }

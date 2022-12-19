@@ -2,9 +2,9 @@ package net.danh.litefishing.Listeners;
 
 import net.Indyuce.mmoitems.MMOItems;
 import net.Indyuce.mmoitems.api.item.mmoitem.MMOItem;
+import net.danh.litefishing.Fish.FishingData;
 import net.danh.litefishing.Utils.Chat;
 import net.danh.litefishing.Utils.File;
-import net.danh.litefishing.Utils.RandomFishing;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerFishEvent;
@@ -13,7 +13,7 @@ import org.bukkit.inventory.ItemStack;
 import java.util.Objects;
 import java.util.concurrent.ThreadLocalRandom;
 
-import static net.danh.litefishing.Utils.FishingData.*;
+import static net.danh.litefishing.Fish.FishingData.*;
 
 public class MMOItemsFish implements Listener {
 
@@ -46,7 +46,9 @@ public class MMOItemsFish implements Listener {
                             }
                         }
                     }
-                    pFish.remove(e.getPlayer());
+                    if (File.getSetting().getBoolean("FISHING_MODE.MMOITEMS.DISABLE_VANILLA_FISH")) {
+                        FishingData.deleteVanillaFish(e, true);
+                    }
                 }
             }
         }

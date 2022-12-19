@@ -10,7 +10,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import static net.danh.litefishing.Utils.FishingData.reloadFishingData;
+import static net.danh.litefishing.Fish.FishingData.loadCustomFish;
+import static net.danh.litefishing.Fish.FishingData.loadFishingData;
 
 public class LFishing extends CMDBase {
     public LFishing() {
@@ -20,6 +21,8 @@ public class LFishing extends CMDBase {
     private void reloadFiles(CommandSender c) {
         LiteFishing.getConfigurationManager().reload("", "config.yml");
         LiteFishing.getConfigurationManager().reload("", "messsage.yml");
+        LiteFishing.getConfigurationManager().reload("", "settings.yml");
+        LiteFishing.getConfigurationManager().reload("", "custom_fish.yml");
         Chat.sendCommandSenderMessage(c, "&aReloaded Files");
     }
 
@@ -29,7 +32,8 @@ public class LFishing extends CMDBase {
             if (args.length == 1) {
                 if (args[0].equalsIgnoreCase("reload")) {
                     reloadFiles(c);
-                    reloadFishingData(c);
+                    loadFishingData(c);
+                    loadCustomFish(c);
                 }
             }
         }
