@@ -14,7 +14,7 @@ public class CustomFish implements Listener {
     @EventHandler
     public void onFishing(PlayerFishEvent e) {
         if (e.getState().equals(PlayerFishEvent.State.CAUGHT_FISH) || e.getState().equals(PlayerFishEvent.State.CAUGHT_ENTITY)) {
-            if (FishingData.antiBug(e)) return;
+            if (!FishingData.antiBug(e)) return;
             ItemStack fish = FishingData.customFishList.get(FishingData.randomCustomFish.next());
             if (fish == null) return;
             if (e.getPlayer().getInventory().firstEmpty() == -1) {

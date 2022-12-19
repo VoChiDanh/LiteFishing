@@ -31,7 +31,7 @@ public class MythicMobsFish implements Listener {
             ftype = fish.split(":");
         }
         if (e.getState().equals(PlayerFishEvent.State.CAUGHT_FISH) || e.getState().equals(PlayerFishEvent.State.CAUGHT_ENTITY)) {
-            if (FishingData.antiBug(e)) return;
+            if (!FishingData.antiBug(e)) return;
             if (ftype != null) {
                 if (ftype[0].equalsIgnoreCase("MYTHICMOB")) {
                     Optional<MythicMob> mob = MythicBukkit.inst().getMobManager().getMythicMob(ftype[1]);
