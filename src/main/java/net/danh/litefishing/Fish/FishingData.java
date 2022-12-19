@@ -61,7 +61,11 @@ public class FishingData {
         }
         Entity entity = e.getCaught();
         if (entity != null) {
-            Bukkit.getScheduler().scheduleSyncDelayedTask(LiteFishing.getLiteFishing(), entity::remove);
+            Bukkit.getScheduler().scheduleSyncDelayedTask(LiteFishing.getLiteFishing(), () -> {
+                if (!(entity instanceof Player)) {
+                    entity.remove();
+                }
+            });
         }
     }
 
