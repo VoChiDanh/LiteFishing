@@ -10,6 +10,7 @@ import org.bukkit.NamespacedKey;
 import org.bukkit.command.CommandSender;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Entity;
+import org.bukkit.entity.Item;
 import org.bukkit.entity.Player;
 import org.bukkit.event.player.PlayerFishEvent;
 import org.bukkit.inventory.ItemFlag;
@@ -62,11 +63,17 @@ public class FishingData {
         Entity entity = e.getCaught();
         if (entity != null) {
             Bukkit.getScheduler().scheduleSyncDelayedTask(LiteFishing.getLiteFishing(), () -> {
-                if (!(entity instanceof Player)) {
+                if (!(entity instanceof Player) && entity instanceof Item) {
                     entity.remove();
                 }
             });
         }
+    }
+
+    public static boolean antiBug(PlayerFishEvent e) {
+        Entity entity = e.getHook().getHookedEntity();
+        Entity entity1 = e.getCaught();
+        return entity instanceof Player || entity1 instanceof Player || !(entity instanceof Item);
     }
 
     public static void loadCustomFish(CommandSender c) {

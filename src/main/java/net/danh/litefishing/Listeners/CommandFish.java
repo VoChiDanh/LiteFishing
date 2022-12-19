@@ -26,6 +26,7 @@ public class CommandFish implements Listener {
         if (chance <= lChance) return;
         if (e.getState().equals(PlayerFishEvent.State.CAUGHT_FISH) || e.getState().equals(PlayerFishEvent.State.CAUGHT_ENTITY)) {
             if (!fish.contains(":")) {
+                if (FishingData.antiBug(e)) return;
                 Bukkit.getScheduler().scheduleSyncDelayedTask(LiteFishing.getLiteFishing(), () -> {
                     Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), PlaceholderAPI.setPlaceholders(e.getPlayer(), fish));
                     Chat.sendPlayerMessage(e.getPlayer(), Objects.requireNonNull(File.getMessage().getString("CAUGHT.COMMAND"), "CAUGHT.COMMAND is null").replace("<name>", dFish.get(fish)).replace("<chance>", String.valueOf(chance)));
