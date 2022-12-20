@@ -25,15 +25,45 @@ public class File {
     public static void checkUpdate(CommandSender c) {
         new UpdateChecker(LiteFishing.getLiteFishing(), 106804).getVersion(version -> {
             if (!LiteFishing.getLiteFishing().getDescription().getVersion().equals(version)) {
-                String[] v_s = version.split("-");
-                String[] v_p = version.split("-");
-                if (Integer.parseInt(v_s[1].replace("b", "")) > Integer.parseInt(v_p[1].replace("b", ""))) {
+                String[] version_spigot = version.split("-");
+                String[] version_plugin = LiteFishing.getLiteFishing().getDescription().getVersion().split("-");
+                Double version_release = Number.getDouble(version_spigot[0]);
+                Double version_beta = Number.getDouble(version_plugin[0]);
+                Integer build_release = Number.getInteger(version_spigot[1].replace("b", ""));
+                Integer build_beta = Number.getInteger(version_plugin[1].replace("b", ""));
+                if (version_release > version_beta) {
                     Chat.sendCommandSenderMessage(c, "&aVersion " + version + " &ais available");
                     Chat.sendCommandSenderMessage(c, "&aYour server is using version " + LiteFishing.getLiteFishing().getDescription().getVersion());
-                    Chat.sendCommandSenderMessage(c, "&aLet's update it. New update can be fix bug or do sth else important.");
+                    Chat.sendCommandSenderMessage(c, "&aPlease update it. This is major update.");
                     Chat.sendCommandSenderMessage(c, "&aPlease check the update log carefully");
                     Chat.sendCommandSenderMessage(c, "&aSpigotMC: https://www.spigotmc.org/resources/106804/");
                     Chat.sendCommandSenderMessage(c, "&aModrinth: https://modrinth.com/plugin/litefishing");
+                    return;
+                }
+                if (version_release.equals(version_beta)) {
+                    if (build_release > build_beta) {
+                        Chat.sendCommandSenderMessage(c, "&6Build " + build_release + "&a for version " + version_release + " is available");
+                        Chat.sendCommandSenderMessage(c, "&6Your server is using build " + build_beta + "&a of version " + version_beta);
+                        Chat.sendCommandSenderMessage(c, "&6Please update it. The new build may be fixed or prepare for a major update in the near future.");
+                        Chat.sendCommandSenderMessage(c, "&6You are out of date " + (build_release - build_beta) + " build(s)");
+                        Chat.sendCommandSenderMessage(c, "&6SpigotMC: https://www.spigotmc.org/resources/106804/");
+                        Chat.sendCommandSenderMessage(c, "&6Modrinth: https://modrinth.com/plugin/litefishing");
+                        return;
+                    }
+                    if (build_release < build_beta) {
+                        Chat.sendCommandSenderMessage(c, "&eYou are using beta version, be careful with everything!");
+                        Chat.sendCommandSenderMessage(c, "&eIf you find any issue from this version, you should report it to author");
+                        Chat.sendCommandSenderMessage(c, "&eDiscord Support: https://discord.gg/r5ejaPSjku");
+                        Chat.sendCommandSenderMessage(c, "&eDiscord ID: VoChiDanh#0862");
+                        return;
+                    }
+                    return;
+                }
+                if (version_release < version_beta) {
+                    Chat.sendCommandSenderMessage(c, "&eYou are using beta version, be careful with everything!");
+                    Chat.sendCommandSenderMessage(c, "&eIf you find any issue from this version, you should report it to author");
+                    Chat.sendCommandSenderMessage(c, "&eDiscord Support: https://discord.gg/r5ejaPSjku");
+                    Chat.sendCommandSenderMessage(c, "&eDiscord ID: VoChiDanh#0862");
                 }
             }
         });
