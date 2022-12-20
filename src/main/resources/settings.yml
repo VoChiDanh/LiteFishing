@@ -8,3 +8,10 @@ FISHING_MODE:
   CUSTOM_FISH:
     ENABLE: true
     DISABLE_VANILLA_FISH: true
+SETTINGS:
+  PREFIX:
+    ENABLE: true
+    PREFIX: "&7[ &bLiteFishing&7 ]"
+SELL:
+  COMMAND:
+    - "eco give %player_name% <cost>"

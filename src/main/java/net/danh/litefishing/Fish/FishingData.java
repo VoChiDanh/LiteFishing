@@ -1,5 +1,6 @@
 package net.danh.litefishing.Fish;
 
+import me.clip.placeholderapi.PlaceholderAPI;
 import net.danh.litefishing.LiteFishing;
 import net.danh.litefishing.Utils.Chat;
 import net.danh.litefishing.Utils.File;
@@ -10,17 +11,20 @@ import org.bukkit.NamespacedKey;
 import org.bukkit.command.CommandSender;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Entity;
+import org.bukkit.entity.HumanEntity;
 import org.bukkit.entity.Item;
 import org.bukkit.entity.Player;
 import org.bukkit.event.player.PlayerFishEvent;
 import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.PlayerInventory;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.persistence.PersistentDataType;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Objects;
+import java.util.stream.Collectors;
 
 public class FishingData {
 
@@ -85,7 +89,8 @@ public class FishingData {
                 if (material != null) {
                     String name = Chat.colorize(File.getCustomFish().getString("CUSTOM_FISH." + fishID + ".NAME"));
                     int weight = File.getCustomFish().getInt("CUSTOM_FISH." + fishID + ".WEIGHT");
-                    List<String> lore = Chat.colorize(File.getCustomFish().getStringList("CUSTOM_FISH." + fishID + ".LORE"));
+                    int cost = File.getCustomFish().getInt("CUSTOM_FISH." + fishID + ".COST");
+                    List<String> lore = Chat.colorize(File.getCustomFish().getStringList("CUSTOM_FISH." + fishID + ".LORE").stream().map(s -> s.replace("<cost>", String.valueOf(cost))).collect(Collectors.toList()));
                     boolean unbreakable = File.getCustomFish().getBoolean("CUSTOM_FISH." + fishID + ".UNBREAKABLE");
                     List<String> flags = File.getCustomFish().getStringList("CUSTOM_FISH." + fishID + ".FLAGS");
                     List<String> enchants = File.getCustomFish().getStringList("CUSTOM_FISH." + fishID + ".ENCHANTMENTS");
@@ -112,6 +117,7 @@ public class FishingData {
                     meta.setLore(lore);
                     meta.setDisplayName(name);
                     meta.getPersistentDataContainer().set(new NamespacedKey(LiteFishing.getLiteFishing(), "lf_fish"), PersistentDataType.STRING, fishID);
+                    meta.getPersistentDataContainer().set(new NamespacedKey(LiteFishing.getLiteFishing(), "lf_cost"), PersistentDataType.INTEGER, cost);
                     builder.setItemMeta(meta);
                     customFishList.put(fishID, builder);
                     randomCustomFish.add(weight, fishID);
@@ -121,4 +127,65 @@ public class FishingData {
             Chat.sendCommandSenderMessage(c, "&aLoaded " + customFishList.size() + " Custom Fishes");
         }
     }
+
+    public static void sellCustomFish(Player p, ItemStack fish) {
+        if (fish != null) {
+            ItemMeta meta = fish.getItemMeta();
+            if (meta != null) {
+                int cost = meta.getPersistentDataContainer().getOrDefault(new NamespacedKey(LiteFishing.getLiteFishing(), "lf_cost"), PersistentDataType.INTEGER, 0);
+                String fishID = meta.getPersistentDataContainer().get(new NamespacedKey(LiteFishing.getLiteFishing(), "lf_fish"), PersistentDataType.STRING);
+                if (cost > 0) {
+                    if (fishID != null) {
+                        int count = getPlayerAmount(p, fish);
+                        int price = cost * count;
+                        List<String> commands = File.getSetting().getStringList("SELL.COMMAND").stream().map(s -> PlaceholderAPI.setPlaceholders(p, s.replace("<cost>", String.valueOf(price)))).toList();
+                        for (String cmd : commands) {
+                            Bukkit.getScheduler().scheduleSyncDelayedTask(LiteFishing.getLiteFishing(), () -> Bukkit.dispatchCommand(Bukkit.getConsoleSender(), cmd));
+                        }
+                        removeItems(p, fish, count);
+                        Chat.sendPlayerMessage(p, Objects.requireNonNull(File.getMessage().getString("COMMAND.SELL.EARN"), "COMMAND.SELL.EARN is null").replace("<price>", String.valueOf(price)).replace("<fish>", fish.getItemMeta().getDisplayName()));
+                    }
+                }
+            }
+        }
+    }
+
+    public static int getPlayerAmount(HumanEntity player, ItemStack item) {
+        final PlayerInventory inv = player.getInventory();
+        final ItemStack[] items = inv.getContents();
+        int c = 0;
+        for (final ItemStack is : items) {
+            if (is != null) {
+                if (is.isSimilar(item)) {
+                    c += is.getAmount();
+                }
+            }
+        }
+        return c;
+    }
+
+    public static void removeItems(Player player, ItemStack item, long amount) {
+        item = item.clone();
+        final PlayerInventory inv = player.getInventory();
+        final ItemStack[] items = inv.getContents();
+        int c = 0;
+        for (int i = 0; i < items.length; ++i) {
+            final ItemStack is = items[i];
+            if (is != null) {
+                if (is.isSimilar(item)) {
+                    if (c + is.getAmount() > amount) {
+                        final long canDelete = amount - c;
+                        is.setAmount((int) (is.getAmount() - canDelete));
+                        items[i] = is;
+                        break;
+                    }
+                    c += is.getAmount();
+                    items[i] = null;
+                }
+            }
+        }
+        inv.setContents(items);
+        player.updateInventory();
+    }
+
 }

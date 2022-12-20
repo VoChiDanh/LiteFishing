@@ -2,10 +2,11 @@ CUSTOM_FISH:
   FISH_1:
     TYPE: COD
     NAME: "&bI | Fish"
+    COST: 100
     WEIGHT: 1000
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -16,10 +17,11 @@ CUSTOM_FISH:
   FISH_2:
     TYPE: SALMON
     NAME: "&6II | Fish"
+    COST: 100
     WEIGHT: 999
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -30,10 +32,11 @@ CUSTOM_FISH:
   FISH_3:
     TYPE: PUFFERFISH
     NAME: "&aIII | Fish"
+    COST: 100
     WEIGHT: 998
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -44,10 +47,11 @@ CUSTOM_FISH:
   FISH_4:
     TYPE: TROPICAL_FISH
     NAME: "&aIV | Fish"
+    COST: 100
     WEIGHT: 997
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -58,10 +62,11 @@ CUSTOM_FISH:
   FISH_5:
     TYPE: COD
     NAME: "&bV | Fish"
+    COST: 100
     WEIGHT: 996
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -72,10 +77,11 @@ CUSTOM_FISH:
   FISH_6:
     TYPE: SALMON
     NAME: "&6VI | Fish"
+    COST: 100
     WEIGHT: 995
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -86,10 +92,11 @@ CUSTOM_FISH:
   FISH_7:
     TYPE: PUFFERFISH
     NAME: "&aVII | Fish"
+    COST: 100
     WEIGHT: 994
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -100,10 +107,11 @@ CUSTOM_FISH:
   FISH_8:
     TYPE: TROPICAL_FISH
     NAME: "&aVIII | Fish"
+    COST: 100
     WEIGHT: 993
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -114,10 +122,11 @@ CUSTOM_FISH:
   FISH_9:
     TYPE: PUFFERFISH
     NAME: "&aIX | Fish"
+    COST: 100
     WEIGHT: 992
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -128,10 +137,11 @@ CUSTOM_FISH:
   FISH_10:
     TYPE: TROPICAL_FISH
     NAME: "&aX | Fish"
+    COST: 100
     WEIGHT: 991
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -142,10 +152,11 @@ CUSTOM_FISH:
   FISH_11:
     TYPE: COD
     NAME: "&b11 | Fish"
+    COST: 100
     WEIGHT: 990
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -156,10 +167,11 @@ CUSTOM_FISH:
   FISH_12:
     TYPE: SALMON
     NAME: "&612 | Fish"
+    COST: 100
     WEIGHT: 989
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -170,10 +182,11 @@ CUSTOM_FISH:
   FISH_13:
     TYPE: PUFFERFISH
     NAME: "&a13 | Fish"
+    COST: 100
     WEIGHT: 988
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -184,10 +197,11 @@ CUSTOM_FISH:
   FISH_14:
     TYPE: TROPICAL_FISH
     NAME: "&a14 | Fish"
+    COST: 100
     WEIGHT: 987
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -198,10 +212,11 @@ CUSTOM_FISH:
   FISH_15:
     TYPE: COD
     NAME: "&b15 | Fish"
+    COST: 100
     WEIGHT: 986
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -212,10 +227,11 @@ CUSTOM_FISH:
   FISH_16:
     TYPE: SALMON
     NAME: "&616 | Fish"
+    COST: 100
     WEIGHT: 985
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -226,10 +242,11 @@ CUSTOM_FISH:
   FISH_17:
     TYPE: PUFFERFISH
     NAME: "&a17 | Fish"
+    COST: 100
     WEIGHT: 984
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -240,10 +257,11 @@ CUSTOM_FISH:
   FISH_18:
     TYPE: TROPICAL_FISH
     NAME: "&a18 | Fish"
+    COST: 100
     WEIGHT: 983
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -254,10 +272,11 @@ CUSTOM_FISH:
   FISH_19:
     TYPE: PUFFERFISH
     NAME: "&a19 | Fish"
+    COST: 100
     WEIGHT: 982
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -268,10 +287,11 @@ CUSTOM_FISH:
   FISH_20:
     TYPE: TROPICAL_FISH
     NAME: "&a20 | Fish"
+    COST: 100
     WEIGHT: 981
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -282,10 +302,11 @@ CUSTOM_FISH:
   FISH_21:
     TYPE: COD
     NAME: "&b21 | Fish"
+    COST: 100
     WEIGHT: 980
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -296,10 +317,11 @@ CUSTOM_FISH:
   FISH_22:
     TYPE: SALMON
     NAME: "&622 | Fish"
+    COST: 100
     WEIGHT: 979
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -310,10 +332,11 @@ CUSTOM_FISH:
   FISH_23:
     TYPE: PUFFERFISH
     NAME: "&a23 | Fish"
+    COST: 100
     WEIGHT: 978
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -324,10 +347,11 @@ CUSTOM_FISH:
   FISH_24:
     TYPE: TROPICAL_FISH
     NAME: "&a24 | Fish"
+    COST: 100
     WEIGHT: 977
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -338,10 +362,11 @@ CUSTOM_FISH:
   FISH_25:
     TYPE: COD
     NAME: "&b25 | Fish"
+    COST: 100
     WEIGHT: 976
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -352,10 +377,11 @@ CUSTOM_FISH:
   FISH_26:
     TYPE: SALMON
     NAME: "&626 | Fish"
+    COST: 100
     WEIGHT: 975
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -366,10 +392,11 @@ CUSTOM_FISH:
   FISH_27:
     TYPE: PUFFERFISH
     NAME: "&a27 | Fish"
+    COST: 100
     WEIGHT: 974
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -380,10 +407,11 @@ CUSTOM_FISH:
   FISH_28:
     TYPE: TROPICAL_FISH
     NAME: "&a28 | Fish"
+    COST: 100
     WEIGHT: 973
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -394,10 +422,11 @@ CUSTOM_FISH:
   FISH_29:
     TYPE: PUFFERFISH
     NAME: "&a29 | Fish"
+    COST: 100
     WEIGHT: 972
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -408,10 +437,11 @@ CUSTOM_FISH:
   FISH_30:
     TYPE: TROPICAL_FISH
     NAME: "&a30 | Fish"
+    COST: 100
     WEIGHT: 971
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -422,10 +452,11 @@ CUSTOM_FISH:
   FISH_31:
     TYPE: COD
     NAME: "&b31 | Fish"
+    COST: 100
     WEIGHT: 970
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -436,10 +467,11 @@ CUSTOM_FISH:
   FISH_32:
     TYPE: SALMON
     NAME: "&632 | Fish"
+    COST: 100
     WEIGHT: 969
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -450,10 +482,11 @@ CUSTOM_FISH:
   FISH_33:
     TYPE: PUFFERFISH
     NAME: "&a33 | Fish"
+    COST: 100
     WEIGHT: 968
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -464,10 +497,11 @@ CUSTOM_FISH:
   FISH_34:
     TYPE: TROPICAL_FISH
     NAME: "&a34 | Fish"
+    COST: 100
     WEIGHT: 967
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -478,10 +512,11 @@ CUSTOM_FISH:
   FISH_35:
     TYPE: COD
     NAME: "&b35 | Fish"
+    COST: 100
     WEIGHT: 966
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -492,10 +527,11 @@ CUSTOM_FISH:
   FISH_36:
     TYPE: SALMON
     NAME: "&636 | Fish"
+    COST: 100
     WEIGHT: 965
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -506,10 +542,11 @@ CUSTOM_FISH:
   FISH_37:
     TYPE: PUFFERFISH
     NAME: "&a37 | Fish"
+    COST: 100
     WEIGHT: 964
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -520,10 +557,11 @@ CUSTOM_FISH:
   FISH_38:
     TYPE: TROPICAL_FISH
     NAME: "&a38 | Fish"
+    COST: 100
     WEIGHT: 963
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -534,10 +572,11 @@ CUSTOM_FISH:
   FISH_39:
     TYPE: PUFFERFISH
     NAME: "&a39 | Fish"
+    COST: 100
     WEIGHT: 962
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -548,10 +587,11 @@ CUSTOM_FISH:
   FISH_40:
     TYPE: TROPICAL_FISH
     NAME: "&a40 | Fish"
+    COST: 100
     WEIGHT: 961
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -562,10 +602,11 @@ CUSTOM_FISH:
   FISH_41:
     TYPE: COD
     NAME: "&b41 | Fish"
+    COST: 100
     WEIGHT: 960
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -576,10 +617,11 @@ CUSTOM_FISH:
   FISH_42:
     TYPE: SALMON
     NAME: "&642 | Fish"
+    COST: 100
     WEIGHT: 959
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -590,10 +632,11 @@ CUSTOM_FISH:
   FISH_43:
     TYPE: PUFFERFISH
     NAME: "&a43 | Fish"
+    COST: 100
     WEIGHT: 958
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -604,10 +647,11 @@ CUSTOM_FISH:
   FISH_44:
     TYPE: TROPICAL_FISH
     NAME: "&a44 | Fish"
+    COST: 100
     WEIGHT: 957
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -618,10 +662,11 @@ CUSTOM_FISH:
   FISH_45:
     TYPE: COD
     NAME: "&b45 | Fish"
+    COST: 100
     WEIGHT: 956
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -632,10 +677,11 @@ CUSTOM_FISH:
   FISH_46:
     TYPE: SALMON
     NAME: "&646 | Fish"
+    COST: 100
     WEIGHT: 955
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -646,10 +692,11 @@ CUSTOM_FISH:
   FISH_47:
     TYPE: PUFFERFISH
     NAME: "&a47 | Fish"
+    COST: 100
     WEIGHT: 954
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -660,10 +707,11 @@ CUSTOM_FISH:
   FISH_48:
     TYPE: TROPICAL_FISH
     NAME: "&a48 | Fish"
+    COST: 100
     WEIGHT: 953
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -674,10 +722,11 @@ CUSTOM_FISH:
   FISH_49:
     TYPE: PUFFERFISH
     NAME: "&a49 | Fish"
+    COST: 100
     WEIGHT: 952
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -688,10 +737,11 @@ CUSTOM_FISH:
   FISH_50:
     TYPE: TROPICAL_FISH
     NAME: "&a50 | Fish"
+    COST: 100
     WEIGHT: 951
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -702,10 +752,11 @@ CUSTOM_FISH:
   FISH_51:
     TYPE: COD
     NAME: "&b51 | Fish"
+    COST: 100
     WEIGHT: 950
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -716,10 +767,11 @@ CUSTOM_FISH:
   FISH_52:
     TYPE: SALMON
     NAME: "&652 | Fish"
+    COST: 100
     WEIGHT: 949
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -730,10 +782,11 @@ CUSTOM_FISH:
   FISH_53:
     TYPE: PUFFERFISH
     NAME: "&a53 | Fish"
+    COST: 100
     WEIGHT: 948
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -744,10 +797,11 @@ CUSTOM_FISH:
   FISH_54:
     TYPE: TROPICAL_FISH
     NAME: "&a54 | Fish"
+    COST: 100
     WEIGHT: 947
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -758,10 +812,11 @@ CUSTOM_FISH:
   FISH_55:
     TYPE: COD
     NAME: "&b55 | Fish"
+    COST: 100
     WEIGHT: 946
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -772,10 +827,11 @@ CUSTOM_FISH:
   FISH_56:
     TYPE: SALMON
     NAME: "&656 | Fish"
+    COST: 100
     WEIGHT: 945
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -786,10 +842,11 @@ CUSTOM_FISH:
   FISH_57:
     TYPE: PUFFERFISH
     NAME: "&a57 | Fish"
+    COST: 100
     WEIGHT: 944
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -800,10 +857,11 @@ CUSTOM_FISH:
   FISH_58:
     TYPE: TROPICAL_FISH
     NAME: "&a58 | Fish"
+    COST: 100
     WEIGHT: 943
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -814,10 +872,11 @@ CUSTOM_FISH:
   FISH_59:
     TYPE: PUFFERFISH
     NAME: "&a59 | Fish"
+    COST: 100
     WEIGHT: 942
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -828,10 +887,11 @@ CUSTOM_FISH:
   FISH_60:
     TYPE: TROPICAL_FISH
     NAME: "&a60 | Fish"
+    COST: 100
     WEIGHT: 941
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -842,10 +902,11 @@ CUSTOM_FISH:
   FISH_61:
     TYPE: COD
     NAME: "&b61 | Fish"
+    COST: 100
     WEIGHT: 940
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -856,10 +917,11 @@ CUSTOM_FISH:
   FISH_62:
     TYPE: SALMON
     NAME: "&662 | Fish"
+    COST: 100
     WEIGHT: 939
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -870,10 +932,11 @@ CUSTOM_FISH:
   FISH_63:
     TYPE: PUFFERFISH
     NAME: "&a63 | Fish"
+    COST: 100
     WEIGHT: 938
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -884,10 +947,11 @@ CUSTOM_FISH:
   FISH_64:
     TYPE: TROPICAL_FISH
     NAME: "&a64 | Fish"
+    COST: 100
     WEIGHT: 937
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -898,10 +962,11 @@ CUSTOM_FISH:
   FISH_65:
     TYPE: COD
     NAME: "&b65 | Fish"
+    COST: 100
     WEIGHT: 936
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -912,10 +977,11 @@ CUSTOM_FISH:
   FISH_66:
     TYPE: SALMON
     NAME: "&666 | Fish"
+    COST: 100
     WEIGHT: 935
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -926,10 +992,11 @@ CUSTOM_FISH:
   FISH_67:
     TYPE: PUFFERFISH
     NAME: "&a67 | Fish"
+    COST: 100
     WEIGHT: 934
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -940,10 +1007,11 @@ CUSTOM_FISH:
   FISH_68:
     TYPE: TROPICAL_FISH
     NAME: "&a68 | Fish"
+    COST: 100
     WEIGHT: 933
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -954,10 +1022,11 @@ CUSTOM_FISH:
   FISH_69:
     TYPE: PUFFERFISH
     NAME: "&a69 | Fish"
+    COST: 100
     WEIGHT: 932
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -968,10 +1037,11 @@ CUSTOM_FISH:
   FISH_70:
     TYPE: TROPICAL_FISH
     NAME: "&a70 | Fish"
+    COST: 100
     WEIGHT: 931
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -982,10 +1052,11 @@ CUSTOM_FISH:
   FISH_71:
     TYPE: COD
     NAME: "&b71 | Fish"
+    COST: 100
     WEIGHT: 930
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -996,10 +1067,11 @@ CUSTOM_FISH:
   FISH_72:
     TYPE: SALMON
     NAME: "&672 | Fish"
+    COST: 100
     WEIGHT: 929
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -1010,10 +1082,11 @@ CUSTOM_FISH:
   FISH_73:
     TYPE: PUFFERFISH
     NAME: "&a73 | Fish"
+    COST: 100
     WEIGHT: 928
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -1024,10 +1097,11 @@ CUSTOM_FISH:
   FISH_74:
     TYPE: TROPICAL_FISH
     NAME: "&a74 | Fish"
+    COST: 100
     WEIGHT: 927
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -1038,10 +1112,11 @@ CUSTOM_FISH:
   FISH_75:
     TYPE: COD
     NAME: "&b75 | Fish"
+    COST: 100
     WEIGHT: 926
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -1052,10 +1127,11 @@ CUSTOM_FISH:
   FISH_76:
     TYPE: SALMON
     NAME: "&676 | Fish"
+    COST: 100
     WEIGHT: 925
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -1066,10 +1142,11 @@ CUSTOM_FISH:
   FISH_77:
     TYPE: PUFFERFISH
     NAME: "&a77 | Fish"
+    COST: 100
     WEIGHT: 924
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -1080,10 +1157,11 @@ CUSTOM_FISH:
   FISH_78:
     TYPE: TROPICAL_FISH
     NAME: "&a78 | Fish"
+    COST: 100
     WEIGHT: 923
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -1094,10 +1172,11 @@ CUSTOM_FISH:
   FISH_79:
     TYPE: PUFFERFISH
     NAME: "&a79 | Fish"
+    COST: 100
     WEIGHT: 922
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -1108,10 +1187,11 @@ CUSTOM_FISH:
   FISH_80:
     TYPE: TROPICAL_FISH
     NAME: "&a80 | Fish"
+    COST: 100
     WEIGHT: 921
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -1122,10 +1202,11 @@ CUSTOM_FISH:
   FISH_81:
     TYPE: COD
     NAME: "&b81 | Fish"
+    COST: 100
     WEIGHT: 920
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -1136,10 +1217,11 @@ CUSTOM_FISH:
   FISH_82:
     TYPE: SALMON
     NAME: "&682 | Fish"
+    COST: 100
     WEIGHT: 919
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -1150,10 +1232,11 @@ CUSTOM_FISH:
   FISH_83:
     TYPE: PUFFERFISH
     NAME: "&a83 | Fish"
+    COST: 100
     WEIGHT: 918
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -1164,10 +1247,11 @@ CUSTOM_FISH:
   FISH_84:
     TYPE: TROPICAL_FISH
     NAME: "&a84 | Fish"
+    COST: 100
     WEIGHT: 917
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -1178,10 +1262,11 @@ CUSTOM_FISH:
   FISH_85:
     TYPE: COD
     NAME: "&b85 | Fish"
+    COST: 100
     WEIGHT: 916
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -1192,10 +1277,11 @@ CUSTOM_FISH:
   FISH_86:
     TYPE: SALMON
     NAME: "&686 | Fish"
+    COST: 100
     WEIGHT: 915
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -1206,10 +1292,11 @@ CUSTOM_FISH:
   FISH_87:
     TYPE: PUFFERFISH
     NAME: "&a87 | Fish"
+    COST: 100
     WEIGHT: 914
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -1220,10 +1307,11 @@ CUSTOM_FISH:
   FISH_88:
     TYPE: TROPICAL_FISH
     NAME: "&a88 | Fish"
+    COST: 100
     WEIGHT: 913
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -1234,10 +1322,11 @@ CUSTOM_FISH:
   FISH_89:
     TYPE: PUFFERFISH
     NAME: "&a89 | Fish"
+    COST: 100
     WEIGHT: 912
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -1248,10 +1337,11 @@ CUSTOM_FISH:
   FISH_90:
     TYPE: TROPICAL_FISH
     NAME: "&a90 | Fish"
+    COST: 100
     WEIGHT: 911
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -1262,10 +1352,11 @@ CUSTOM_FISH:
   FISH_91:
     TYPE: COD
     NAME: "&b91 | Fish"
+    COST: 100
     WEIGHT: 910
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -1276,10 +1367,11 @@ CUSTOM_FISH:
   FISH_92:
     TYPE: SALMON
     NAME: "&692 | Fish"
+    COST: 100
     WEIGHT: 909
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -1290,10 +1382,11 @@ CUSTOM_FISH:
   FISH_93:
     TYPE: PUFFERFISH
     NAME: "&a93 | Fish"
+    COST: 100
     WEIGHT: 908
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -1304,10 +1397,11 @@ CUSTOM_FISH:
   FISH_94:
     TYPE: TROPICAL_FISH
     NAME: "&a94 | Fish"
+    COST: 100
     WEIGHT: 907
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -1318,10 +1412,11 @@ CUSTOM_FISH:
   FISH_95:
     TYPE: COD
     NAME: "&b95 | Fish"
+    COST: 100
     WEIGHT: 906
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -1332,10 +1427,11 @@ CUSTOM_FISH:
   FISH_96:
     TYPE: SALMON
     NAME: "&696 | Fish"
+    COST: 100
     WEIGHT: 905
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -1346,10 +1442,11 @@ CUSTOM_FISH:
   FISH_97:
     TYPE: PUFFERFISH
     NAME: "&a97 | Fish"
+    COST: 100
     WEIGHT: 904
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -1360,10 +1457,11 @@ CUSTOM_FISH:
   FISH_98:
     TYPE: TROPICAL_FISH
     NAME: "&a98 | Fish"
+    COST: 100
     WEIGHT: 903
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -1374,10 +1472,11 @@ CUSTOM_FISH:
   FISH_99:
     TYPE: PUFFERFISH
     NAME: "&a99 | Fish"
+    COST: 100
     WEIGHT: 902
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE
@@ -1388,10 +1487,11 @@ CUSTOM_FISH:
   FISH_100:
     TYPE: TROPICAL_FISH
     NAME: "&a100 | Fish"
+    COST: 100
     WEIGHT: 901
     LORE:
       - "&7&oRare: Normal"
-      - "&8&l&oItem has no value for sale"
+      - "&8&l&oFish Price: <cost>$"
     UNBREAKABLE: true
     FLAGS:
       - HIDE_UNBREAKABLE

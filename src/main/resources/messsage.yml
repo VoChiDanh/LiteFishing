@@ -4,3 +4,17 @@ CAUGHT:
   ITEM_FULL: "&cYou caught the <name> item with chance <chance>% but your inventory was full so it dropped out"
   COMMAND: "&aYou caught the gift <name> with chance <chance>%"
   CUSTOM_FISH: "&aYou caught custom fish <name>!"
+COMMAND:
+  HELP:
+    - "&e/litefishing reload - Reload Files"
+    - "&e/litefishing fish <Fish_ID> <Amount> <Player> - Give custom fish to player"
+  HELP_MEMBER:
+    - "&e/litefishing sell - Sell fish"
+  RELOAD: "&aReloaded Files"
+  FISH:
+    ID_IS_NULL: "&cFish with ID <id> is null"
+    AMOUNT_IS_INCORRECT: "&cAmount is incorrect"
+    PLAYER_IS_NULL: "&cPlayer <name> is null"
+    GIVE_FISH: "&aYou caught fish <name>!"
+  SELL:
+    EARN: "&aYou earned <price>$ from fish <fish>"

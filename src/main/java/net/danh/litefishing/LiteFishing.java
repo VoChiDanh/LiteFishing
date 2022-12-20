@@ -8,7 +8,6 @@ import net.danh.litefishing.Listeners.MMOItemsFish;
 import net.danh.litefishing.Listeners.MythicMobsFish;
 import net.danh.litefishing.Utils.Chat;
 import net.danh.litefishing.Utils.File;
-import net.danh.litefishing.Utils.UpdateChecker;
 import net.xconfig.bukkit.XConfigBukkit;
 import net.xconfig.bukkit.config.BukkitConfigurationModel;
 import org.bukkit.Bukkit;

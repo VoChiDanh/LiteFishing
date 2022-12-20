@@ -45,7 +45,11 @@ public class Chat {
     public static void sendPlayerMessage(org.bukkit.entity.Player p, String... msg) {
         Objects.requireNonNull(msg, Arrays.toString(msg) + " is null");
         for (String string : msg) {
-            p.sendMessage(Chat.colorize(string));
+            if (!File.getSetting().getBoolean("SETTINGS.PREFIX.ENABLE")) {
+                p.sendMessage(Chat.colorize(string));
+            } else {
+                p.sendMessage(Chat.colorize(File.getSetting().getString("SETTINGS.PREFIX.PREFIX") + " " + string));
+            }
         }
     }
 
@@ -56,7 +60,11 @@ public class Chat {
     public static void sendPlayerMessage(org.bukkit.entity.Player p, List<String> msg) {
         Objects.requireNonNull(msg, msg.toString() + " is null");
         for (String string : msg) {
-            p.sendMessage(Chat.colorize(string));
+            if (!File.getSetting().getBoolean("SETTINGS.PREFIX.ENABLE")) {
+                p.sendMessage(Chat.colorize(string));
+            } else {
+                p.sendMessage(Chat.colorize(File.getSetting().getString("SETTINGS.PREFIX.PREFIX") + " " + string));
+            }
         }
     }
 
