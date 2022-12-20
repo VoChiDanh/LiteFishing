@@ -3,6 +3,8 @@ package net.danh.litefishing.CMD;
 import net.danh.litefishing.CMD.API.CMDBase;
 import net.danh.litefishing.LiteFishing;
 import net.danh.litefishing.Utils.Chat;
+import net.danh.litefishing.Utils.File;
+import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
 import org.bukkit.util.StringUtil;
 
@@ -34,6 +36,7 @@ public class LFishing extends CMDBase {
                     reloadFiles(c);
                     loadFishingData(c);
                     loadCustomFish(c);
+                    File.checkUpdate(c);
                 }
             }
         }
