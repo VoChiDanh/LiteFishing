@@ -1,9 +1,17 @@
 SETTINGS:
-  XP_1:
-    CHANCE: 80
-    TYPE: COMMAND
-    DISPLAY: "&a5 XP"
-    ID: "bcore xp add %player_name% 5"
+  XP_1: #Name of reward
+    CHANCE: 80 #Chance to get command
+    TYPE: COMMAND #Type: COMMAND, MYTHICMOB, MMOITEMS
+    DISPLAY: "&a5 XP" #Display: Only for command type
+    ID: "eco add %player_name% 5" #Command
+  QUAIVATBIEN: #Name of reward
+    CHANCE: 10 #Chance to get mob
+    TYPE: MYTHICMOB #Type: COMMAND, MYTHICMOB, MMOITEMS
+    ID: QUAIVATBIEN #InternalName of mob
+  SACHPHUPHEP1: #Name of reward
+    CHANCE: 1 #Chance to get item
+    TYPE: MMOITEMS #Type: COMMAND, MYTHICMOB, MMOITEMS
+    ID: MATERIAL;SACHPHUPHEP1 #TYPE;ID of item
   XP_2:
     CHANCE: 70
     TYPE: COMMAND
@@ -29,11 +37,3 @@ SETTINGS:
     TYPE: COMMAND
     DISPLAY: "&a20 XP"
     ID: "bcore qp add %player_name% 10"
-  QUAIVATBIEN:
-    CHANCE: 10
-    TYPE: MYTHICMOB
-    ID: QUAIVATBIEN
-  SACHPHUPHEP1:
-    CHANCE: 1
-    TYPE: MMOITEMS
-    ID: MATERIAL;SACHPHUPHEP1

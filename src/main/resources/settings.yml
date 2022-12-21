@@ -13,5 +13,5 @@ SETTINGS:
     ENABLE: true
     PREFIX: "&7[ &bLiteFishing&7 ]"
 SELL:
-  COMMAND:
+  COMMAND: #You can add more command, all command below this will execute when player sell fish
     - "eco give %player_name% <cost>"

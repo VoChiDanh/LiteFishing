@@ -1,17 +1,17 @@
 CUSTOM_FISH:
-  FISH_1:
-    TYPE: COD
-    NAME: "&bI | Fish"
-    COST: 100
-    WEIGHT: 1000
-    LORE:
+  FISH_1: #Fish ID
+    TYPE: COD #Material
+    NAME: "&bI | Fish" #Display of fish
+    COST: 100 #Cost, use it on sell feature
+    WEIGHT: 1000 #Weight, shouldn't have 2 fish have same weight
+    LORE: #Lore of fish
       - "&7&oRare: Normal"
       - "&8&l&oFish Price: <cost>$"
-    UNBREAKABLE: true
-    FLAGS:
+    UNBREAKABLE: true #Unbreakable setting
+    FLAGS: #Flag settings
       - HIDE_UNBREAKABLE
       - HIDE_ENCHANTS
-    ENCHANTMENTS:
+    ENCHANTMENTS: #Enchantments setting
       - LUCK:1
       - LURE:1
   FISH_2:
