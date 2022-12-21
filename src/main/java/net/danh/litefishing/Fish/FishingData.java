@@ -132,10 +132,10 @@ public class FishingData {
         if (fish != null) {
             ItemMeta meta = fish.getItemMeta();
             if (meta != null) {
-                int cost = meta.getPersistentDataContainer().getOrDefault(new NamespacedKey(LiteFishing.getLiteFishing(), "lf_cost"), PersistentDataType.INTEGER, 0);
                 String fishID = meta.getPersistentDataContainer().get(new NamespacedKey(LiteFishing.getLiteFishing(), "lf_fish"), PersistentDataType.STRING);
-                if (cost > 0) {
-                    if (fishID != null) {
+                int cost = meta.getPersistentDataContainer().getOrDefault(new NamespacedKey(LiteFishing.getLiteFishing(), "lf_cost"), PersistentDataType.INTEGER, File.getCustomFish().getInt("CUSTOM_FISH." + fishID + ".COST", 0));
+                if (fishID != null) {
+                    if (cost > 0) {
                         int count = getPlayerAmount(p, fish);
                         int price = cost * count;
                         List<String> commands = File.getSetting().getStringList("SELL.COMMAND").stream().map(s -> PlaceholderAPI.setPlaceholders(p, s.replace("<cost>", String.valueOf(price)))).toList();
