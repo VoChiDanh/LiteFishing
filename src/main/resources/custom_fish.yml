@@ -4,6 +4,7 @@ CUSTOM_FISH:
     NAME: "&bI | Fish" #Display of fish
     COST: 100 #Cost, use it on sell feature
     WEIGHT: 1000 #Weight, shouldn't have 2 fish have same weight
+    CUSTOM_MODEL_DATA: 0 #Custom model data for fish
     LORE: #Lore of fish
       - "&7&oRare: Normal"
       - "&8&l&oFish Price: <cost>$"
@@ -18,6 +19,7 @@ CUSTOM_FISH:
     TYPE: SALMON
     NAME: "&6II | Fish"
     COST: 100
+    CUSTOM_MODEL_DATA: 0
     WEIGHT: 999
     LORE:
       - "&7&oRare: Normal"

@@ -90,6 +90,7 @@ public class FishingData {
                     String name = Chat.colorize(File.getCustomFish().getString("CUSTOM_FISH." + fishID + ".NAME"));
                     int weight = File.getCustomFish().getInt("CUSTOM_FISH." + fishID + ".WEIGHT");
                     int cost = File.getCustomFish().getInt("CUSTOM_FISH." + fishID + ".COST");
+                    int custom_model_data = File.getCustomFish().getInt("CUSTOM_FISH." + fishID + ".CUSTOM_MODEL_DATA");
                     List<String> lore = Chat.colorize(File.getCustomFish().getStringList("CUSTOM_FISH." + fishID + ".LORE").stream().map(s -> s.replace("<cost>", String.valueOf(cost))).collect(Collectors.toList()));
                     boolean unbreakable = File.getCustomFish().getBoolean("CUSTOM_FISH." + fishID + ".UNBREAKABLE");
                     List<String> flags = File.getCustomFish().getStringList("CUSTOM_FISH." + fishID + ".FLAGS");
@@ -112,6 +113,9 @@ public class FishingData {
                                 }
                             }
                         }
+                    }
+                    if (custom_model_data > 0) {
+                        meta.setCustomModelData(custom_model_data);
                     }
                     meta.setUnbreakable(unbreakable);
                     meta.setLore(lore);
