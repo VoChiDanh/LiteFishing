@@ -2,15 +2,13 @@ package net.danh.litefishing;
 
 import net.danh.litefishing.CMD.LFishing;
 import net.danh.litefishing.Fish.FishingData;
-import net.danh.litefishing.Listeners.CommandFish;
-import net.danh.litefishing.Listeners.CustomFish;
-import net.danh.litefishing.Listeners.MMOItemsFish;
-import net.danh.litefishing.Listeners.MythicMobsFish;
+import net.danh.litefishing.Listeners.*;
 import net.danh.litefishing.Utils.Chat;
 import net.danh.litefishing.Utils.File;
 import net.xconfig.bukkit.XConfigBukkit;
 import net.xconfig.bukkit.config.BukkitConfigurationModel;
 import org.bukkit.Bukkit;
+import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class LiteFishing extends JavaPlugin {
@@ -35,9 +33,16 @@ public final class LiteFishing extends JavaPlugin {
             Bukkit.getPluginManager().registerEvents(new MMOItemsFish(), liteFishing);
             Chat.sendCommandSenderMessage(Bukkit.getConsoleSender(), "&aRegistered MMOItems Fishing Event");
         }
-        if (getServer().getPluginManager().getPlugin("MythicMobs") != null) {
-            Bukkit.getPluginManager().registerEvents(new MythicMobsFish(), liteFishing);
-            Chat.sendCommandSenderMessage(Bukkit.getConsoleSender(), "&aRegistered MythicMobs Fishing Event");
+        Plugin mythicmob = getServer().getPluginManager().getPlugin("MythicMobs");
+        if (mythicmob != null) {
+            if (mythicmob.getDescription().getVersion().startsWith("5")) {
+                Bukkit.getPluginManager().registerEvents(new MythicMobsFish(), liteFishing);
+                Chat.sendCommandSenderMessage(Bukkit.getConsoleSender(), "&aRegistered MythicMobs v5 Fishing Event");
+            }
+            if (mythicmob.getDescription().getVersion().startsWith("4")) {
+                Bukkit.getPluginManager().registerEvents(new MythicMobsLegacyFish(), liteFishing);
+                Chat.sendCommandSenderMessage(Bukkit.getConsoleSender(), "&aRegistered MythicMobs v4 (4.8.0 -> 4.14.1) Fishing Event");
+            }
         }
         new LFishing();
         Chat.sendCommandSenderMessage(Bukkit.getConsoleSender(), "&aRegistered Commands");
@@ -47,12 +52,9 @@ public final class LiteFishing extends JavaPlugin {
         configurationManager.build("", "custom_fish.yml");
         Chat.sendCommandSenderMessage(Bukkit.getConsoleSender(), "&aLoaded Files");
         FishingData.loadFishingData(Bukkit.getConsoleSender());
-        if (File.getSetting().getBoolean("FISHING_MODE.CUSTOM_FISH.ENABLE")) {
-            FishingData.loadCustomFish(Bukkit.getConsoleSender());
-            Bukkit.getPluginManager().registerEvents(new CustomFish(), liteFishing);
-            Chat.sendCommandSenderMessage(Bukkit.getConsoleSender(), "&aRegistered Custom Fish");
-
-        }
+        FishingData.loadCustomFish(Bukkit.getConsoleSender());
+        Bukkit.getPluginManager().registerEvents(new CustomFish(), liteFishing);
+        Chat.sendCommandSenderMessage(Bukkit.getConsoleSender(), "&aRegistered Custom Fish");
         File.checkUpdate(Bukkit.getConsoleSender());
     }
 
