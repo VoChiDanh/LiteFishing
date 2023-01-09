@@ -1,6 +1,6 @@
 package net.danh.litefishing.Listeners;
 
-import io.lumine.mythic.api.adapters.AbstractLocation;
+import io.lumine.mythic.api.exceptions.InvalidMobTypeException;
 import io.lumine.mythic.api.mobs.MythicMob;
 import io.lumine.mythic.bukkit.MythicBukkit;
 import net.danh.litefishing.Fish.FishingData;
@@ -36,7 +36,11 @@ public class MythicMobsFish implements Listener {
                 if (ftype[0].equalsIgnoreCase("MYTHICMOB")) {
                     Optional<MythicMob> mob = MythicBukkit.inst().getMobManager().getMythicMob(ftype[1]);
                     if (mob.isPresent()) {
-                        mob.get().spawn(new AbstractLocation(e.getHook().getLocation().getWorld().getName(), e.getHook().getLocation().getX(), e.getHook().getLocation().getY(), e.getHook().getLocation().getZ()), 1);
+                        try {
+                            MythicBukkit.inst().getAPIHelper().spawnMythicMob(ftype[1], e.getHook().getLocation());
+                        } catch (InvalidMobTypeException | NoSuchMethodError ex) {
+                            throw new RuntimeException(ex);
+                        }
                         Chat.sendPlayerMessage(e.getPlayer(), Objects.requireNonNull(File.getMessage().getString("CAUGHT.MOB"), "CAUGHT.MOB is null").replace("<name>", mob.get().getDisplayName().toString()).replace("<chance>", String.valueOf(chance)));
                     }
                     if (File.getSetting().getBoolean("FISHING_MODE.MYTHICMOB.DISABLE_VANILLA_FISH")) {

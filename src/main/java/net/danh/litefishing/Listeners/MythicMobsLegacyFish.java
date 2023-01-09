@@ -36,7 +36,7 @@ public class MythicMobsLegacyFish implements Listener {
                     MythicMob mob = MythicMobs.inst().getMobManager().getMythicMob(ftype[1]);
                     try {
                         MythicMobs.inst().getAPIHelper().spawnMythicMob(mob, e.getHook().getLocation(), 1);
-                    } catch (InvalidMobTypeException ex) {
+                    } catch (InvalidMobTypeException | NoSuchMethodError ex) {
                         throw new RuntimeException(ex);
                     }
                     Chat.sendPlayerMessage(e.getPlayer(), Objects.requireNonNull(File.getMessage().getString("CAUGHT.MOB"), "CAUGHT.MOB is null").replace("<name>", mob.getDisplayName().toString()).replace("<chance>", String.valueOf(chance)));
