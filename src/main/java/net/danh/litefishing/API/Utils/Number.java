@@ -1,4 +1,4 @@
-package net.danh.litefishing.Utils;
+package net.danh.litefishing.API.Utils;
 
 import java.math.BigDecimal;
 import java.text.DecimalFormat;

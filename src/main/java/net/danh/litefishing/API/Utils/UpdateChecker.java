@@ -1,4 +1,4 @@
-package net.danh.litefishing.Utils;
+package net.danh.litefishing.API.Utils;
 
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;

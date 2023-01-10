@@ -1,31 +1,31 @@
-package net.danh.litefishing.Fish;
+package net.danh.litefishing.API.Fish;
 
 import java.util.NavigableMap;
-import java.util.Random;
 import java.util.TreeMap;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class RandomFish<String> {
 
-    private final NavigableMap<Integer, String> map = new TreeMap<>();
-    private final Random random;
-    private int total = 0;
+    private final NavigableMap<Long, String> map = new TreeMap<>();
+    private final ThreadLocalRandom random;
+    private long total = 0;
 
     public RandomFish() {
-        this(new Random());
+        this(ThreadLocalRandom.current());
     }
 
-    public RandomFish(Random random) {
+    public RandomFish(ThreadLocalRandom random) {
         this.random = random;
     }
 
-    public void add(int weight, String resultMaterial) {
+    public void add(long weight, String resultMaterial) {
         if (weight <= 0) return;
         total += weight;
         map.put(total, resultMaterial);
     }
 
     public String next() {
-        int value = random.nextInt(total);
+        long value = random.nextLong(total);
         return map.higherEntry(value).getValue();
     }
 

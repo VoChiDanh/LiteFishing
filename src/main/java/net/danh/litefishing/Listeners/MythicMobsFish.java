@@ -3,9 +3,9 @@ package net.danh.litefishing.Listeners;
 import io.lumine.mythic.api.exceptions.InvalidMobTypeException;
 import io.lumine.mythic.api.mobs.MythicMob;
 import io.lumine.mythic.bukkit.MythicBukkit;
-import net.danh.litefishing.Fish.FishingData;
-import net.danh.litefishing.Utils.Chat;
-import net.danh.litefishing.Utils.File;
+import net.danh.litefishing.API.Fish.FishingData;
+import net.danh.litefishing.API.Utils.Chat;
+import net.danh.litefishing.API.Utils.File;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerFishEvent;
@@ -14,7 +14,7 @@ import java.util.Objects;
 import java.util.Optional;
 import java.util.concurrent.ThreadLocalRandom;
 
-import static net.danh.litefishing.Fish.FishingData.*;
+import static net.danh.litefishing.API.Fish.FishingData.*;
 
 public class MythicMobsFish implements Listener {
 

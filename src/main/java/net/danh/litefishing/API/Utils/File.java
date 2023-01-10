@@ -1,4 +1,4 @@
-package net.danh.litefishing.Utils;
+package net.danh.litefishing.API.Utils;
 
 import net.danh.litefishing.LiteFishing;
 import org.bukkit.command.CommandSender;

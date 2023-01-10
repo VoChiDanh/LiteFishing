@@ -1,10 +1,10 @@
-package net.danh.litefishing.Fish;
+package net.danh.litefishing.API.Fish;
 
 import me.clip.placeholderapi.PlaceholderAPI;
+import net.danh.litefishing.API.Utils.Chat;
+import net.danh.litefishing.API.Utils.File;
+import net.danh.litefishing.API.Utils.Number;
 import net.danh.litefishing.LiteFishing;
-import net.danh.litefishing.Utils.Chat;
-import net.danh.litefishing.Utils.File;
-import net.danh.litefishing.Utils.Number;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;

@@ -1,11 +1,11 @@
 package net.danh.litefishing.CMD;
 
-import net.danh.litefishing.CMD.API.CMDBase;
-import net.danh.litefishing.Fish.FishingData;
+import net.danh.litefishing.API.CMDBase;
+import net.danh.litefishing.API.Fish.FishingData;
+import net.danh.litefishing.API.Utils.Chat;
+import net.danh.litefishing.API.Utils.File;
+import net.danh.litefishing.API.Utils.Number;
 import net.danh.litefishing.LiteFishing;
-import net.danh.litefishing.Utils.Chat;
-import net.danh.litefishing.Utils.File;
-import net.danh.litefishing.Utils.Number;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.HumanEntity;
@@ -19,8 +19,8 @@ import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
-import static net.danh.litefishing.Fish.FishingData.loadCustomFish;
-import static net.danh.litefishing.Fish.FishingData.loadFishingData;
+import static net.danh.litefishing.API.Fish.FishingData.loadCustomFish;
+import static net.danh.litefishing.API.Fish.FishingData.loadFishingData;
 
 public class LFishing extends CMDBase {
     public LFishing() {

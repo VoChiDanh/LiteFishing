@@ -1,10 +1,10 @@
 package net.danh.litefishing.Listeners;
 
 import me.clip.placeholderapi.PlaceholderAPI;
-import net.danh.litefishing.Fish.FishingData;
+import net.danh.litefishing.API.Fish.FishingData;
+import net.danh.litefishing.API.Utils.Chat;
+import net.danh.litefishing.API.Utils.File;
 import net.danh.litefishing.LiteFishing;
-import net.danh.litefishing.Utils.Chat;
-import net.danh.litefishing.Utils.File;
 import org.bukkit.Bukkit;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -13,7 +13,7 @@ import org.bukkit.event.player.PlayerFishEvent;
 import java.util.Objects;
 import java.util.concurrent.ThreadLocalRandom;
 
-import static net.danh.litefishing.Fish.FishingData.*;
+import static net.danh.litefishing.API.Fish.FishingData.*;
 
 public class CommandFish implements Listener {
     @EventHandler
